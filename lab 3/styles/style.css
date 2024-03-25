@@ -1,0 +1,939 @@
+@media screen and (max-width: 1170px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        border-radius: 5px;
+        position: absolute;
+        top: 50px;
+        left: 32px;
+        background-color: var(--secondary-text-color);
+        width: 255px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-item {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--text-color);
+        border-radius: 5px;
+    }
+}
+
+
+:root {
+    --font: 'Montserrat';
+    --secondary-weight: bold;
+    --light-text-color: #FFF;
+    --primary-text-color: #23A6F0;
+    --secondary-text-color: #737373;
+    --text-color: #000;
+    font-size: 16px;
+    --common-line-height: 16px;
+}
+
+
+
+body {
+    background: var(--dark-background-color, #252B42);
+    background-image: url('../images/background.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    color: var(--light-text-color);
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: var(--secondary-weight);
+    line-height: 0.9;
+    letter-spacing: 0.2px;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1;
+    letter-spacing: 0.2px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1;
+    letter-spacing: 0.1px;
+
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+
+}
+
+h6 {
+    color: var(--primary-text-color);
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+button {
+    /* display: flex; */
+    padding: 15px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.57;
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color, #23A6F0);
+
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.header_navbar a {
+    line-height: 50px;
+    color: var(--light-text-color);
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.navbar_logo {
+    font-size: 2rem;
+    font-weight: var(--secondary-weight);
+    line-height: 2.2;
+    letter-spacing: 0.1px;
+    width: 300px;
+}
+
+.navbar_nav {
+    padding-left: 25px;
+    display: flex;
+}
+
+.dropdown-content {
+    padding-left: 20px;
+}
+
+.header_navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+}
+
+.free_offers {
+    background: var(--primary-text-color, #23A6F0);
+    color: var(--light-text-color, #FFF);
+
+}
+
+.button_detailed {
+    margin-left: 3%;
+    color: var(--primary-text-color, #23A6F0);
+    background: transparent;
+}
+
+.courses_head ul {
+    display: flex;
+}
+
+.courses_head p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.courses_advantages li {
+    background-color: var(--light-text-color);
+    border-radius: 5px;
+    width: 25%;
+    padding: 2% 2%;
+    min-width: 200px;
+    margin-bottom: 5%;
+}
+
+.courses_advantages ul {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses_advantages svg {
+    background-color: #E74040;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.courses_advantages hr {
+    width: 50px;
+    height: 2px;
+    background: var(--danger-color, #ff0101);
+    margin-left: 0;
+}
+
+.courses_advantages h5 {
+    color: #000
+}
+
+.courses_advantages p {
+    color: var(--secondary-text-color, #737373);
+    font-size: 0.875rem;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+}
+
+
+.courses_head {
+    width: 50%;
+}
+
+.team_about .pract_advice {
+    padding-left: 85px;
+
+    width: 50%;
+
+}
+
+.team_about .image-container {
+    position: relative;
+    min-width: 300px;
+    max-width: 500px;
+    width: 40%;
+    height: 400px;
+    bottom: -70px;
+    margin-left: 7px;
+}
+
+.img2 {
+    position: absolute;
+    bottom: -25px;
+    left: 60px;
+}
+
+.img1 {
+    bottom: -0;
+}
+
+.img3 {
+    position: absolute;
+    bottom: 190px;
+    left: 270px;
+}
+
+.img5 {
+    position: absolute;
+    bottom: 295px;
+    left: -60px;
+}
+
+.img6 {
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+}
+
+.img4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pract_advice {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.pract_advice p {
+    width: 50%;
+    font-size: 0.875rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+}
+
+.team_about .pract_advice p {
+    width: 100%;
+}
+
+.team_about {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.pract_advice a {
+    color: var(--primary-text-color, #23A6F0);
+
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.pract_advice hr {
+    margin: 0;
+    width: 94px;
+    height: 7px;
+    background: var(--danger-color, #E74040);
+    border: 0px;
+}
+
+#wrap_advice{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.advice_content {
+    width: 50%;
+}
+
+.courses_info li {
+    background-color: var(--light-text-color);
+    width: 28%;
+    padding: 2% 2%;
+    min-width: 200px;
+    margin-bottom: 20px;
+
+}
+
+.courses_info .photo_people {
+    width: 100%;
+    height: auto;
+}
+
+.courses_info {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+}
+
+.courses_info .course_depatrment {
+    color: var(--primary-text-color, #23A6F0);
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+.courses_info h5 {
+    color: #000;
+}
+
+.courses_info del {
+    color: var(--muted-color, #BDBDBD);
+    font-size: 1rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+
+.courses_info ins {
+    color: var(--secondary-color-1, #40BB15);
+    font-size: 1rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+}
+
+.courses_info ul {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses_info ul li {
+    padding: 0;
+    width: 30%;
+    min-width: 80px;
+}
+
+.courses_info small {
+    min-width: max-content;
+}
+
+.courses_info div {
+    height: 3.5%;
+    display: flex;
+}
+
+.courses_info div p {
+    position: relative;
+    bottom: 45%;
+    left: 3%;
+}
+
+.courses_info small {
+    color: var(--second-text-color, #737373);
+    font-size: 0.75rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+}
+
+.courses_info p {
+    color: var(--second-text-color, #737373);
+    font-size: 0.875rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+}
+
+.courses_info button {
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.courses_info .course_info {
+    display: inline-block;
+}
+
+.courses_info .course_info li {
+    padding-left: 10px;
+    text-decoration: dotted;
+    width: 90%;
+}
+
+.container_comments {
+    margin: 20% 0%;
+
+}
+
+.container_comments ul li {
+    background-color: var(--light-text-color);
+    min-width: 200px;
+    width: 28%;
+    margin-bottom: 20px;
+    padding: 2% 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+.container_comments ul {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comments_comment {
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-size: 0.875rem;
+
+    font-weight: var(--primary-weight);
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+
+}
+
+.container_comments div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_comments div img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.container_comments div ul {
+    display: inline-block;
+    justify-content: center;
+}
+
+.container_comments div li {
+    min-width: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.comments_name {
+    color: var(--primary-text-color, #23A6F0);
+    font-size: 0.875rem;
+    font-weight: var(--secondary-weight);
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.comments_about {
+    color: var(--text-color, #000);
+    font-size: 0.75rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.pract_advice_w_button {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.pract_advice_w_button input {
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    background: #F9F9F9;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 3.75;
+    min-width: 100px;
+    width: 35%;
+}
+
+.pract_advice_w_button button {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #E6E6E6;
+    background: var(--primary-text-color, #23A6F0);
+    color: var(--light-text-color);
+    margin-left: -5px;
+}
+
+footer {
+    margin: 0% 10%;
+
+}
+
+footer p {
+    color: var(--light-text-color, #FFF);
+    font-size: 0.875rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+}
+
+footer a {
+    color: var(--light-text-color, #FFF);
+    font-size: 0.875rem;
+    font-weight: var(--primary-weight);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_container li {
+    max-width: min-content;
+}
+
+.footer_container li li {
+    max-width: max-content;
+}
+
+.expirience {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+}
+
+.teachers_about h5 {
+    color: var(--primary-text-color);
+}
+
+.header_navbar .navbar_nav .active_page {
+    color: var(--primary-text-color);
+}
+
+.purchase_form {
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--light-text-color);
+    color: var(--secondary-text-color);
+}
+
+.purchase_form li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.purchase_form li input {
+    width: 50%;
+    height: 25px;
+}
+
+.purchase_form li select {
+    width: 50%;
+    height: 25px;
+}
+
+.purchase_form li label input {
+    width: 50%;
+    height: 15px;
+}
+
+.purchase_form li p {
+    width: 50%;
+}
+
+.purchase_head {
+    font-size: 2.5rem;
+    font-weight: var();
+    line-height: 1;
+    letter-spacing: 0.2px;
+}
+
+.teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teachers li {
+    min-width: 200px;
+    max-width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light-text-color);
+    margin: 10px;
+    width: 30%;
+    color: var(--secondary-text-color);
+    justify-content: center;
+    padding: 1%;
+}
+
+.teachers ul li {
+    width: 90%;
+    min-width: 180px;
+}
+
+.expirience {
+    color: var(--text-color);
+
+}
+
+.teachers img {
+    justify-content: center;
+}
+
+.navbar_auth ul {
+    display: inline-block;
+}
+
+.navbar_auth ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_auth ul li input {
+    width: 50;
+}
+
+#modalToggle {
+    display: none;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #184C99;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal-content button {
+    margin-left: 4rem;
+}
+
+
+#modalToggle:checked+#modal {
+    display: flex;
+}
+
+.reg_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_auth label {
+    font-weight: var(--secondary-weight);
+}
+div#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 92%;
+    background-color: var(--secondary-text-color);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;    
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  div#scrollToTopBtn:hover {
+
+    background-color: #fff;
+  }
+.up_arrow{
+        
+    margin-top: 15px;
+    margin-left:12px ;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #000; 
+    border-right: 2px solid #000; 
+    transform: rotate(315deg);
+}
+
+.navbar_auth form ul li{
+    margin-top: 10px;
+}
+.buttons_filter{
+    align-items: center;
+    width: 100%;
+}
+.buttons_filter button{
+   width: 200px;  
+   margin: 5px;  
+}
+#floating-window {
+    width:100%;
+    position: fixed;    
+    bottom: 0px;
+    right: -5px;   
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(0, 0,0, 0.6);;   
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none; 
+}
+
+#close-button {
+    position: absolute;
+    bottom: 28%;
+    left: 75%;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#close-button:hover {
+    color: #999999;
+}
+
+.non-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.non-modal-content {
+    background-color: rgba(0,0,0,0.7);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.non-modal-content h2 {
+    margin-top: 0;
+}
+
+.non-modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#cart{   
+    background-color: #252B42;  
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* 80% від розміру вікна браузера */
+    height: 80%; /* 80% від розміру вікна браузера */
+    overflow: auto;    
+    padding: 20px; /* Додатковий відступ всередині вікна */
+    border: 2px solid #000000; /* Чорна рамка */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+    
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #ca1e1e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-button img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Стилізація кнопок зміни кількості товару */
+.quantity-controls button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #ddd;
+}
+
+.quantity-controls button:active {
+    background-color: #ccc;
+}
+
+/* Стилізація кнопки видалення */
+.remove-item {
+    background-color: #da1818; /* Колір кнопки */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px; /* Відступ від інших кнопок */
+}
+
+.remove-item:hover {
+    background-color: #d1472c; /* Зміна кольору при наведенні */
+}
+
+.remove-item:active {
+    background-color: #af3d21; /* Зміна кольору при натисканні */
+}
+
+.sort-button {
+    background-color: #4CAF50; /* Зелений колір */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sort-button:hover {
+    background-color: #45a049; /* Зелений колір при наведенні курсору */
+}
+
+.sort-button:active {
+    background-color: #3e8e41; /* Зелений колір при натисканні */
+}
+
+.chart-container {
+    display: none;
+}
+
+.chart-container.active {
+    display: block;
+}
+#cart-items button{
+    width: max-content;
+    height: min-content;
+}
+.canvas_wrap{
+    width: 1000px;
+    height: 500px;
+}
+#histogramCanvas{width: 1000px;}
